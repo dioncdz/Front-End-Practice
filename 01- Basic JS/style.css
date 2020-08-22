@@ -9,6 +9,7 @@ body {
    color: #333;
    font-family: 'Courier New', Courier, monospace;
    font-size: 1rem;
+   text-align: center;
 }
 
 .container {
@@ -17,15 +18,12 @@ body {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   margin: 0 auto;
-}
-
-#background-change {
-   height: 150px;
-   border: 5px dotted #40434E;
    margin: 1rem auto;
    padding: 1rem;
+   height: 150px;
+   border: 5px dotted #40434E;
 }
+
 
 #background-change .buttons {
    padding: 1rem;
