@@ -12,7 +12,10 @@ function persistence(num) {
   let finalNumber = num;
   let count = 0;
   while(finalNumber > 9) {
-    finalNumber = finalNumber.toString().split('').map(el => Number(el)).reduce((a,b) => a *b)
+    finalNumber = finalNumber.toString()
+      .split('')
+      .map(el => Number(el))
+      .reduce((a,b) => a *b)
     count++
   }
   return count;;
@@ -27,3 +30,31 @@ function persistence(num) {
 
  persistence(4) === 0 // because 4 is already a one-digit number
  */
+
+/************
+* // OTHER SOLUTIONS
+***********/
+/******
+* // SOLUTION 1
+function persistence(num) {
+   var times = 0;
+   
+   num = num.toString();
+   
+   while (num.length > 1) {
+     times++;
+     num = num.split('').map(Number).reduce((a, b) => a * b).toString();
+   }
+   
+   return times;
+}
+
+* // SOLUTION 2
+function persistence(num) {
+   for (var i = 0; num > 9; i++) {
+     num = num.toString().split('').reduce((t, c) => c * t);
+   }
+   return i;
+}
+
+*****/
