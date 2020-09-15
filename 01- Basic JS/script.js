@@ -36,7 +36,7 @@ container.appendChild(divAdd).innerHTML = `<h1>I'm a div</h1><p>Me too</p>`;
 
 /*************************QUOTE GENERATOR*******************************/
 
-const quoteButton = document.querySelector('#quote-generator');
+const quoteButton = document.querySelector('#btn-quote');
 let quoteOutput = document.querySelector('#quote');
 let quotes = [
    "Life has bigger plans for you than you possibly know",
@@ -55,13 +55,11 @@ let lastNum;
 
 function appendQuote() {
    let num = Math.floor(Math.random() * 10);
-   console.log(num);
    if(lastNum === num) {
       return appendQuote()
    }
    lastNum = num;
-   quoteOutput.innerHTML = `${quotes[num]}`;
-   
+   quoteOutput.innerHTML = `"${quotes[num]}"`;
 }
 
 quoteButton.addEventListener('click', appendQuote);

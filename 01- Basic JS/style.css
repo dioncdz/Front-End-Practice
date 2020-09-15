@@ -44,3 +44,23 @@ body {
    background: rgba(241, 255, 250, 0.8);
 }
 
+/* QUOTE GENERATOR */
+#quote-generator {
+   background: #003D5B;
+   color: #F6D6A2;
+   justify-content: space-evenly;
+   font-weight: 400;
+   font-family: 'Times New Roman', Times, serif;
+   letter-spacing: 2px;
+   border: 5px double #D1495B;
+}
+
+#quote-generator button {
+   cursor: pointer;
+   padding: 5px 10px;
+   background: linear-gradient(to bottom, #30638E, #00798C);
+   color: #F6D6A2;
+}
+
+#quote-generator button:active { transform: translateY(2px); }
+#quote-generator button:focus { outline: none;}
