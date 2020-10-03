@@ -4,6 +4,8 @@
    background-color: yellow;
    position: relative;
    overflow: hidden;
+   font-size: 200px;
+   text-align: center;
 }
 
 .doodler {
