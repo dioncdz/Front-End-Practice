@@ -3,6 +3,7 @@
    height: 600px;
    background-color: yellow;
    position: relative;
+   overflow: hidden;
 }
 
 .doodler {
