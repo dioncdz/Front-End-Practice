@@ -52,4 +52,36 @@ $(document).ready(function() {
         $('#checklist > ul > li').eq(3).css({"color" : "teal", "font-size": "2rem"})
         
     })
+
+    // ASYNCHRONIOUS
+
+    let loadBtn = $('#load-btn');
+    let asyncDiv = $('.async-container');
+    
+    loadBtn.on('click', ()=> {
+        // asyncDiv.load('sample.txt #data')
+        $.get("https://jsonplaceholder.typicode.com/users", function(data, status) {
+            // console.table(data);
+            data.forEach((element,index) => {
+                asyncDiv.append(`<li>Username: ${element.username}</li>`)
+                // console.log();
+            });
+        })
+    })
+
+    let submitBtn = $('#submit-btn');
+    let firstName = $('#fname')
+    let lastName = $('#lname')
+
+    lastName.on('keyup', ()=> {
+        var lg = $(this).val().length;
+
+        console.log(lg);
+    })
+
+    firstName.on('keyup', ()=> {
+        var lg = $(this).val().length;
+
+        console.log(lg);
+    })
 })
