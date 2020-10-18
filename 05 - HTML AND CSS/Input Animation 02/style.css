@@ -68,6 +68,7 @@ body {
     transition: .5s;
     pointer-events: none;
 }
+
 .container .input-box input:focus ~ span,
 .container .input-box input:valid ~ span {
     transform: translate(-10px, -32px);
@@ -85,3 +86,4 @@ body {
 
 .container .input-box input[type="submit"]:hover {
     background: #e91e63;
+}
