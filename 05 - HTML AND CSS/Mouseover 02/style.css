@@ -37,7 +37,7 @@ ul li a {
     background: #fff;
     transform: translate(-50%, -50%);
     pointer-events: none;
-    mix-blend-mode: difference;s
+    mix-blend-mode: difference;
     transition: .1s;
 }
 
