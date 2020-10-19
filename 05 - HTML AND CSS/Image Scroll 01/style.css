@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background: skyblue;
+}
+
+.container .mac {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 606px;
+    height: 489px;
+}
+
+.container .mac .image-box {
+    position: absolute;
+    top: 24px;
+    left: 25px;
+    width: 555px;
+    height: 310px;
+    background: red;
+    background: url(./img/desktopWebsite.jpg);
+    background-position: top;
+    background-size: 100%;
+    transition: 5s ease-in-out;
+}
+
+.container .macbook {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    width: 609px;
+    height: 362px;
+}
+
+.container .macbook .image-box {
+    position: absolute;
+    top: 21px;
+    left: 73px;
+    width: 464px;
+    height: 289px;
+    background: red;
+    background: url(./img/desktopWebsite.jpg);
+    background-position: top;
+    background-size: 100%;
+    transition: 5s ease;
+}
+
+.container .iphone {
+    position: absolute;
+    top: 40%;
+    left: 12%;
+    width: 245px;
+    height: 383px;
+    z-index: 2;
+}
+
+.container .iphone .image-box {
+    position: absolute;
+    top: 44px;
+    left: 42px;
+    width: 161px;
+    height: 287px;
+    background: red;
+    background: url(./img/mobileWebsite.jpg);
+    background-position: top;
+    background-size: 100%;
+    transition: 15s ease-out;
+}
+
+.container .mac:hover .image-box,
+.container .macbook:hover .image-box,
+.container .iphone:hover .image-box {
+    background-position: bottom;
+}
