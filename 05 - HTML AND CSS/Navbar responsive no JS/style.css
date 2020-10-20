@@ -1,5 +1,5 @@
 :root {
-    --background: rgba(85, 214, 170, .85);
+    --background: rgba(0, 214, 170, .85);
 }
 
 *,
@@ -35,3 +35,33 @@ header {
     width: 100%;
 }
 
+nav {
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background: var(--background);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #333;
+}
