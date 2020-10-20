@@ -42,6 +42,7 @@ nav {
     top: 100%;
     left: 0;
     background: var(--background);
+    display: none;
 }
 
 nav ul {
@@ -64,4 +65,14 @@ nav a {
 
 nav a:hover {
     color: #333;
+}
+
+.nav-toggle:checked ~ nav {
+    display: block;
+}
+
+/* checkbox will disappear */
+/* purpose of label "for" attribute can be clicked instead of checkbox */
+.nav-toggle {
+    display: none;
 }
