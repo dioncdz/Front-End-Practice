@@ -42,7 +42,7 @@ nav {
     top: 100%;
     left: 0;
     background: var(--background);
-    display: none;
+    /* display: none; */
 }
 
 nav ul {
@@ -68,11 +68,47 @@ nav a:hover {
 }
 
 .nav-toggle:checked ~ nav {
-    display: block;
+    /* display: block; */
 }
 
 /* checkbox will disappear */
 /* purpose of label "for" attribute can be clicked instead of checkbox */
 .nav-toggle {
     display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    /* below is just to see what's happening while editing */
+    /* border: 1px solid red; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: #fff;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    height: 3px;
 }
