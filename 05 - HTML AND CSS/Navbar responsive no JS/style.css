@@ -122,5 +122,15 @@ nav a:hover {
     content: '';
     position: absolute;
     top: 7px;
-    height: 3px;
+}
+
+@media screen and (min-width: 800px) {
+    .nav-toggle-label {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax() 1fr;
+    }
 }
